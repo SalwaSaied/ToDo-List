@@ -80,10 +80,7 @@ function UpdateOnSelectionItems(){
     }
     });
 
-    if (IsPresent) {
-    SetAlertMessage("This item already present in the list!");
-    return;
-    }
+   
     
     todoData.forEach((element)=>{
         if (element.item == updateText.innerText.trim()){
@@ -95,6 +92,7 @@ function UpdateOnSelectionItems(){
     addupdateClick.setAttribute("onclick", "CompleteTodoItem()");
     addupdateClick.setAttribute("src", "images/plus.png");
     todoValue.value="";
+    
 
 }
 
